@@ -10,15 +10,7 @@ package linkedlists;
  * @author Abdulaziz Al-Alshaikh
  */
 public class CircularSinglyLinkedList {
-    public static void main(String[] args) {
-        CircularSinglyLinkedList c = new CircularSinglyLinkedList();
-        c.add(1);
-        c.add(2);
-        c.add(3);
-        c.add(54);
-        c.printSinglyLinkedList();
-       
-    }
+   
     Node head, tail;
     //circural singly linked list is similar to singly linked list. 
     //However there is only one difference, which is the tail's next pointer points to the head reference.
