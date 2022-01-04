@@ -10,18 +10,7 @@ package linkedlists;
  * @author Abdulaziz Al-Alshaikh
  */
 public class CircularDoublyLinkedList {
-    public static void main(String[] args) {
-        CircularDoublyLinkedList c = new CircularDoublyLinkedList();
-        c.add(1);
-        c.add(2);
-        c.add(3);
-        c.add(54);
-        c.printDoublyLinkedList();
-        c.addAt(2, 12);
-        c.printDoublyLinkedList();
-        c.printReversedList();
-       
-    }
+   
     Node head, tail;
     //circural doubly linked list is similar to circular singly linked list. 
     //However there is only one difference, which is the tail's next pointer points to the head reference and head's previous pointer points to the tail.
