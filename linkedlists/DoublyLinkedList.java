@@ -11,16 +11,7 @@ package linkedlists;
  */
 public class DoublyLinkedList {
     
-    public static void main(String[] args) {
-        DoublyLinkedList d = new DoublyLinkedList();
-        d.add(1);
-        d.add(2);
-        d.add(3);
-        d.add(4);
-        d.printDoublyLinkedList();
-       
-
-    }
+    
     Node head, tail;//Note that using a tail referece would allow us to insert/delete a node at the end of the list in constant time! 
     int size;
     
