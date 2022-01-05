@@ -24,10 +24,10 @@ public class StackDataStructure {
         this(10);
     }
     
-    public void push(int value) {
+    public void push(int value) {//O(1) space & time.
         if(top == stack.length - 1) {
             //In this case the stack is full.
-            //so we can double the size of the stack and copy all elements to the new one.
+            //so we can double the size of the stack and copy all elements to the new one. O(n) space & time.
             int [] temp = Arrays.copyOf(stack, stack.length);
             stack = new int[stack.length * 2];
             for(int i = 0; i < temp.length; i++)
@@ -36,18 +36,18 @@ public class StackDataStructure {
         stack[top++] = value;
     }
     
-    public int pop() {
+    public int pop() {//O(1) space & time.
         if(top == 0)
             throw new NoSuchElementException("The stack is empty!");
         return stack[--top];//Pre decrement is used to pop because we used post increment to push.
     }
     
-    public int peek() {
+    public int peek() {//O(1) space & time.
         if(top == 0)
             throw new NoSuchElementException("The stack is empty!");
         return stack[top-1];
     }
-    public void printStack() {
+    public void printStack() {//O(n) time.
         if(top == 0) {
             System.out.println("Empty!");
             return;
