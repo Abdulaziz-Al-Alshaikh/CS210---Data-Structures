@@ -13,17 +13,6 @@ import java.util.NoSuchElementException;
  * @author Abdulaziz Al-Alshaikh
  */
 public class StackDataStructure {
-    public static void main(String[] args) {
-        StackDataStructure s = new StackDataStructure(10);
-        s.push(2);
-        s.push(3);
-        s.push(22);
-        s.push(244);
-        s.pop();
-        s.pop();
-        s.push(2222);
-        s.printStack();
-    }
     
     int top;
     int [] stack;
